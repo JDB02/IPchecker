@@ -29,6 +29,7 @@ def refresh():
 
 # ping function
 def ping_IP():
+    ping_result.delete(1.0, END)
     print(ping_txt.get())
     myIP = ping(ping_txt.get(), verbose=True)
     ping_result.insert(END, myIP)
